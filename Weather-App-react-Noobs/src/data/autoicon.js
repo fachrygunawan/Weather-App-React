@@ -1,0 +1,1 @@
+// if condition is rain then return rainy icon

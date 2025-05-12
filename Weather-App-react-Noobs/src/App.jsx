@@ -1,13 +1,11 @@
-import { useState } from 'react'
-
+import Dashboard from './components/Dashboard';
 
 function App() {
-
   return (
     <>
-      <div className='text-3xl'>Hellow World</div>
+      <Dashboard />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
