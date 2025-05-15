@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import Header from './Header';
 import CurrentTemp from './CurrentTemp';
+import MiniCurrentTemp from './MiniCurrentTemp';
 import CurrentTime from './TimeDisplay';
 import Greetings from './Greetings';
+import HourlyForecast from './HourlyForecast';
 import { locationData } from '../data/LocationData';
 
 const Dashboard = () => {
@@ -30,13 +32,22 @@ const Dashboard = () => {
           <div className="hidden md:block w-[1px] bg-gray-300"></div>
 
           {/* Right Section */}
-          <div className="md:w-5/12 bg-gray-50 p-8">
-            <div className="mb-8">
+          <div className="md:w-5/12 bg-white-200 p-8">
+            <div className="flex flex-col items-center justify-center flex-1">
               {/* Auto greeting */}
               <Greetings GreatNow={currentTime} />
               {/* Showed real-time clock */}
               <CurrentTime />
-
+              {/* Current Temperature */}
+              <MiniCurrentTemp 
+                currentTemperature={currentTemperature}
+                condition={condition}
+              />
+              {/* Hourly Forecast */}
+              <p className="p-3 text-black font-semibold text-center">
+                Hourly Forecast
+              </p>
+              <HourlyForecast />
             </div>
           </div>
         </div>

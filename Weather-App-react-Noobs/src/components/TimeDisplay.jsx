@@ -27,7 +27,7 @@ const CurrentTime = () => {
     hour12: false,
   });
 
-  return <p className="text-3xl font-bold text-gray-700">{formattedTime}</p>;
+  return <p className="text-2xl font-semibold text-black">{formattedTime}</p>;
 };
 
 export default CurrentTime;
