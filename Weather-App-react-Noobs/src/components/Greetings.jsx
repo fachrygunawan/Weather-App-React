@@ -7,7 +7,7 @@ const Greetings = ({ GreatNow }) => {
     return 'Good Night';
   };
 
-  return <h2 className="text-xl font-semibold text-gray-800 mb-2">{getGreeting()}</h2>;
+  return <h2 className="text-xl font-semibold text-black mb-2">{getGreeting()}</h2>;
 };
 
 export default Greetings;
