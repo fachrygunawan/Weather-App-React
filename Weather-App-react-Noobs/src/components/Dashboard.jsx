@@ -5,6 +5,7 @@ import MiniCurrentTemp from './MiniCurrentTemp';
 import CurrentTime from './TimeDisplay';
 import Greetings from './Greetings';
 import HourlyForecast from './HourlyForecast';
+import WeeklyForecast from './WeeklyForecast';
 import { locationData } from '../data/LocationData';
 
 const Dashboard = () => {
@@ -26,6 +27,7 @@ const Dashboard = () => {
               humidity={humidity}
               condition={condition}
             />
+            <WeeklyForecast/>
           </div>
 
           {/* Divider */}
