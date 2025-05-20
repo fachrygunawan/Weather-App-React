@@ -1,8 +1,8 @@
 const CurrentTemp = ({currentTemperature, windSpeed, humidity, condition}) => {
   return (
-    <div className="mb-16">
-        <div className="text-center mb-4">
-            <span className="text-[180px] font-semibold leading-none text-gray">
+    <div className="mb-8">
+        <div className="text-center mb-2">
+            <span className="text-[120px] font-semibold leading-none text-gray">
             {currentTemperature}
             <span className="text-6xl align-top">°</span>
             </span>
